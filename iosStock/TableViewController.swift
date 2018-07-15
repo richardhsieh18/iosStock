@@ -181,7 +181,7 @@ class TableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (indexPath.section == 1) {
-            
+            self.performSegue(withIdentifier: "test", sender: self)
             print(indexPath.row)
         }
     }

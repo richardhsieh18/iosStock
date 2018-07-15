@@ -7,5 +7,6 @@ target 'iosStock' do
 
   # Pods for iosStock
   pod 'RealmSwift'
+  pod 'Charts'
 
 end

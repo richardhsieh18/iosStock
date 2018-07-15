@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0442947620FB54B8004F155A /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442947520FB54B8004F155A /* ChartViewController.swift */; };
 		0453AFA420E3DB620023361A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFA320E3DB620023361A /* TableViewController.swift */; };
 		0453AFA620E3DB780023361A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFA520E3DB780023361A /* TableViewCell.swift */; };
-		0453AFAB20E3E3730023361A /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFAA20E3E3730023361A /* GameTableViewController.swift */; };
-		0453AFAD20E3E38C0023361A /* GameTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFAC20E3E38C0023361A /* GameTableViewCell1.swift */; };
-		0453AFAF20E3E3980023361A /* GameTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFAE20E3E3980023361A /* GameTableViewCell2.swift */; };
-		0453AFB120E3E3A60023361A /* GameTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFB020E3E3A60023361A /* GameTableViewCell3.swift */; };
 		0453AFB320E3E78D0023361A /* ChartSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453AFB220E3E78D0023361A /* ChartSource.swift */; };
 		0453AFB520E3EB550023361A /* AAPL.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0453AFB420E3EB550023361A /* AAPL.csv */; };
 		04BD8E9120D16D5500C5D24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD8E9020D16D5500C5D24E /* AppDelegate.swift */; };
@@ -24,12 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0442947520FB54B8004F155A /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		0453AFA320E3DB620023361A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0453AFA520E3DB780023361A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		0453AFAA20E3E3730023361A /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
-		0453AFAC20E3E38C0023361A /* GameTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell1.swift; sourceTree = "<group>"; };
-		0453AFAE20E3E3980023361A /* GameTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell2.swift; sourceTree = "<group>"; };
-		0453AFB020E3E3A60023361A /* GameTableViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell3.swift; sourceTree = "<group>"; };
 		0453AFB220E3E78D0023361A /* ChartSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSource.swift; sourceTree = "<group>"; };
 		0453AFB420E3EB550023361A /* AAPL.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AAPL.csv; sourceTree = "<group>"; };
 		04BD8E8D20D16D5500C5D24E /* iosStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,15 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0453AFA920E3E3540023361A /* Game */ = {
+		0442947420FB5453004F155A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				0453AFAA20E3E3730023361A /* GameTableViewController.swift */,
-				0453AFAC20E3E38C0023361A /* GameTableViewCell1.swift */,
-				0453AFAE20E3E3980023361A /* GameTableViewCell2.swift */,
-				0453AFB020E3E3A60023361A /* GameTableViewCell3.swift */,
+				0453AFB220E3E78D0023361A /* ChartSource.swift */,
+				0453AFB420E3EB550023361A /* AAPL.csv */,
+				04BD8E9920D16D5600C5D24E /* LaunchScreen.storyboard */,
 			);
-			path = Game;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		04BD8E8420D16D5500C5D24E = {
@@ -90,15 +83,13 @@
 			children = (
 				04BD8E9020D16D5500C5D24E /* AppDelegate.swift */,
 				04BD8E9220D16D5500C5D24E /* ViewController.swift */,
-				0453AFA920E3E3540023361A /* Game */,
 				04BD8E9420D16D5500C5D24E /* Main.storyboard */,
 				04BD8E9720D16D5600C5D24E /* Assets.xcassets */,
 				0453AFA320E3DB620023361A /* TableViewController.swift */,
 				0453AFA520E3DB780023361A /* TableViewCell.swift */,
-				0453AFB420E3EB550023361A /* AAPL.csv */,
-				0453AFB220E3E78D0023361A /* ChartSource.swift */,
-				04BD8E9920D16D5600C5D24E /* LaunchScreen.storyboard */,
+				0442947520FB54B8004F155A /* ChartViewController.swift */,
 				04BD8E9C20D16D5600C5D24E /* Info.plist */,
+				0442947420FB5453004F155A /* Setting */,
 			);
 			path = iosStock;
 			sourceTree = "<group>";
@@ -215,11 +206,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iosStock/Pods-iosStock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -235,15 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0453AFAB20E3E3730023361A /* GameTableViewController.swift in Sources */,
 				04BD8E9320D16D5500C5D24E /* ViewController.swift in Sources */,
 				0453AFB320E3E78D0023361A /* ChartSource.swift in Sources */,
-				0453AFAF20E3E3980023361A /* GameTableViewCell2.swift in Sources */,
-				0453AFB120E3E3A60023361A /* GameTableViewCell3.swift in Sources */,
 				0453AFA620E3DB780023361A /* TableViewCell.swift in Sources */,
 				0453AFA420E3DB620023361A /* TableViewController.swift in Sources */,
 				04BD8E9120D16D5500C5D24E /* AppDelegate.swift in Sources */,
-				0453AFAD20E3E38C0023361A /* GameTableViewCell1.swift in Sources */,
+				0442947620FB54B8004F155A /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

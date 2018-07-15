@@ -124,38 +124,38 @@
                             <outlet property="delegate" destination="2cm-G6-J1B" id="ATQ-Og-vTQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="OyX-JU-LmY" kind="show" identifier="test" id="4pO-Vu-Wj7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zh7-fU-yUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="54.375" y="104.5774647887324"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="abo-4X-sb9">
+        <!--Chart View Controller-->
+        <scene sceneID="gg9-cl-Ago">
             <objects>
-                <tableViewController id="Djb-Vn-uwg" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IRd-aH-3bS">
+                <viewController id="OyX-JU-LmY" customClass="ChartViewController" customModule="iosStock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iZy-L7-kh6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-7z-efI" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="90" width="320" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9KW-vY-lag">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9KW-vY-lag" id="mcA-vi-sfx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Djb-Vn-uwg" id="At3-YL-deS"/>
-                            <outlet property="delegate" destination="Djb-Vn-uwg" id="iRS-Yb-7XB"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yR8-Mq-RCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="BQR-FB-Quz"/>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="KXK-7z-efI" id="jL6-ei-wch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X48-HP-baR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="100"/>
+            <point key="canvasLocation" x="871.875" y="104.5774647887324"/>
         </scene>
     </scenes>
 </document>
